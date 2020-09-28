@@ -32,103 +32,69 @@
 	<div class="container-contact100">
 
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" autocomplete="off">
 
 				<span class="contact100-form-title">
 					<img src="images/header_hni.png">
 					Ingreso de Paciente Pediátrico
 				</span>
 
-				<div class="wrap-input100 validate-input" data-validate="Ejemplo: UPC, UPB, UCIP, ESC, LAC, CXP">
-					<input class="input100" type="text" name="name" placeholder="FiO2">
+				<div class="wrap-input100 validate-input" data-validate="Debe ingresar un número válido">
+					<input id="FiO2" class="input100" type="number" name="name" placeholder="FiO2">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar dato">
-					<input class="input100" type="text" name="name" placeholder="PaO2">
+				<div class="wrap-input100 validate-input" data-validate="Debe ingresar un número válido">
+					<input id="PaO2" class="input100" type="number" name="name" placeholder="PaO2">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar dato">
-					<input class="input100" type="text" name="name" placeholder="PCO2">
+				<div class="wrap-input100 validate-input" data-validate="Debe ingresar un número válido">
+					<input id="PCO2" class="input100" type="number" name="name" placeholder="PCO2">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar solo números">
-					<input class="input100" type="number" name="name" placeholder="PAW">
+				<div class="wrap-input100 validate-input" data-validate="Debe ingresar un número válido">
+					<input id="PAW" class="input100" type="number" name="name" placeholder="PAW">
 					<span class="focus-input100"></span>
 				</div>
-
-				<hr>
-
-				<div class="wrap-input100 validate-input" data-validate="Ejemplo: UPC, UPB, UCIP, ESC, LAC, CXP">
-					<input class="input100" type="text" name="name" placeholder="La PAFI es">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar dato">
-					<input class="input100" type="text" name="name" placeholder="IO">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar dato">
-					<input class="input100" type="text" name="name" placeholder="El PAO2 es">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar solo números">
-					<input class="input100" type="number" name="name" placeholder="A-a es">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar solo números">
-					<input class="input100" type="number" name="name" placeholder="a/A es">
-					<span class="focus-input100"></span>
-				</div>
-				<!-- <div class="wrap-input100 validate-input" data-validate = "Seleccione la fecha de nacimiento">
-					<input class="input100" type="date" name="Nacimiento" placeholder="Fecha de Nacimiento">
-					<span class="focus-input100"></span>
-				</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Edad al momento del ingreso">
-					<input class="input100" type="number" name="Edad" placeholder="Edad">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate="Por favor ingresar dato">
-					<input class="input100" type="text" name="place" placeholder="Procedencia">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Redacte el resumen de ingreso">
-					<textarea class="input100" name="message" placeholder="Resumen de Ingreso"></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Evolucione por aspectos aquí">
-					<textarea class="input100" name="message" placeholder="Evolución por Aspectos"></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Ingrese el diagnostico del ingreso">
-					<textarea class="input100" name="message" placeholder="Diagnóstico/s presuntivo/s"></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Ingrese los Planes">
-					<textarea class="input100" name="message" placeholder="Planes"></textarea>
-					<span class="focus-input100"></span>
-				</div> -->
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
 						<span>
-							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-							Enviar
+							<i class="fa fa-calculator m-r-6" aria-hidden="true"></i>
+							Calcular
 						</span>
 					</button>
 				</div>
 			</form>
+
+			<hr>
+
+			<div class="wrap-input100" data-validate="Ejemplo: UPC, UPB, UCIP, ESC, LAC, CXP">
+				<input id="PAFI" class="input100" type="text" name="name" placeholder="La PAFI es">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100" data-validate="Por favor ingresar dato">
+				<input id="IO" class="input100" type="text" name="name" placeholder="IO">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100" data-validate="Por favor ingresar dato">
+				<input id="PAO2" class="input100" type="text" name="name" placeholder="El PAO2 es">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100" data-validate="Por favor ingresar solo números">
+				<input id="A-a" class="input100" type="number" name="name" placeholder="A-a es">
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100" data-validate="Por favor ingresar solo números">
+				<input id="a/A" class="input100" type="number" name="name" placeholder="a/A es">
+				<span class="focus-input100"></span>
+			</div>
 		</div>
 	</div>
 
