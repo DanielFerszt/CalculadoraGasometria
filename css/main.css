@@ -149,8 +149,16 @@ iframe {
   width: 550px;
   background: transparent;
   padding: 50px 0px 160px 0px;
+  
 }
-
+@media (max-width: 550px) {
+  .wrap-contact100 {
+    width: 100%;
+    background: transparent;
+    padding: 50px 0px 160px 0px;
+    
+  }
+}
 
 /*==================================================================
 [ Form ]*/
