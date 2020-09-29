@@ -167,6 +167,11 @@ iframe {
   width: 100%;
 }
 
+.input-title{
+  margin-left: 31px;
+  padding: 5px;
+}
+
 .contact100-form-title {
   display: block;
   font-family: Ubuntu-Bold;
